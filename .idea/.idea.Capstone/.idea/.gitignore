@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.Capstone.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../:\2sem\OOP2sem\Capstone\.idea\.idea.Capstone\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

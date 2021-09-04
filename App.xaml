@@ -1,0 +1,28 @@
+﻿<Application x:Class="Capstone.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Capstone"
+             xmlns:viewModel="clr-namespace:Capstone.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Capstone.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         <ResourceDictionary>
+             <ResourceDictionary.MergedDictionaries>
+                 <ResourceDictionary Source="Theme/MenuButtonTheme.xaml" />
+                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml" />
+                 <ResourceDictionary Source="Theme/ExitButtonTheme.xaml" />
+                 <ResourceDictionary Source="Theme/MenuItemTheme.xaml" />
+                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/themes/materialdesigntheme.light.xaml" />
+                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/themes/materialdesigntheme.defaults.xaml" />
+                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/primary/materialdesigncolor.lightblue.xaml" />
+                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/themes/recommended/accent/materialdesigncolor.lime.xaml" />
+             </ResourceDictionary.MergedDictionaries>
+             <DataTemplate DataType="{x:Type viewModel:DiscoveryViewModel}">
+                <view:DiscoveryView />
+             </DataTemplate>
+             <DataTemplate DataType="{x:Type viewModel:BrowseViewModel}">
+                 <view:BrowseView />
+             </DataTemplate>
+         </ResourceDictionary>
+    </Application.Resources>
+</Application>
